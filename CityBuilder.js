@@ -23,13 +23,13 @@ Promise.all([
 //console.log("These are the available businesses", globalData{"Businesses"});
 
 
-
-console.log("JSON Access Tests all data", globalData);
-console.log("JSON Access Tests array index", globalData[0]);
-console.log("JSON Access Tests array value", globalData["Businesses"]);
-//console.log("JSON Access Tests dot access string", globalData."Businesses");
-console.log("JSON Access Tests dot access", globalData.Businesses);
-//console.log("JSON Access Tests object value", globalData{"Businesses"});
+function runPrints () {
+	console.log("JSON Access Tests all data", globalData);
+	console.log("JSON Access Tests array index", globalData[0]);
+	console.log("JSON Access Tests array value", globalData["Businesses"]);
+	console.log("JSON Access Tests dot access", globalData.Businesses);
+	
+)
 
 
 
