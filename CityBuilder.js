@@ -20,7 +20,7 @@ Promise.all([
 })
 .catch(error => console.error(`error loading JSON: ${error}`));
 
-console.log("These are the Thorp businesses", globalData.Businesses.cityType);
+//console.log("These are the Thorp businesses", globalData.Businesses.cityType);
 
 
 
