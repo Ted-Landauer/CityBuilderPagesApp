@@ -29,9 +29,11 @@ function selectBusinesses (cityType) {
 	
 	let businessList = globalData.cityType;
 	
+	/*
 	for (let i = 0; i < totalBusinessesNeeded) {
 		
 	}
+	*/
 	
 }
 
