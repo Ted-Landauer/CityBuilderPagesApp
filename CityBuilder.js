@@ -29,7 +29,7 @@ function runPrints () {
 	console.log("JSON Access Tests array value", globalData["Businesses"]);
 	console.log("JSON Access Tests dot access", globalData.Businesses);
 	
-)
+}
 
 
 
