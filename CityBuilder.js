@@ -45,7 +45,7 @@ function runPrints () {
 function selectBusinesses (cityType) {
 	console.log("City(2):", cityType);
 	
-	let businessList = globalData.Businesses.cityType;
+	let businessList = globalData.Businesses[cityType];
 	
 	console.log("List 1:", globalData);
 	console.log("List 2:", globalData.Businesses);
