@@ -10,38 +10,38 @@
 		"metropolis": "25001+"
 	},
 	"DieRolls": {
-		"thorp": [
+		"thorp": {
 			"max": 6,
 			"amount": 5
-		],
-		"hamlet": [
+		},
+		"hamlet": {
 			"max": 12,
 			"amount": 8
-		],
-		"village": [
+		},
+		"village": {
 			"max": 20,
 			"amount": 12
-		],
-		"small town": [
+		},
+		"small town": {
 			"max": 20,
 			"amount": 12
-		],
-		"large town": [
+		},
+		"large town": {
 			"max": 20,
 			"amount": 12
-		],
-		"small city": [
+		},
+		"small city": {
 			"max": 20,
 			"amount": 12
-		],
-		"large city": [
+		},
+		"large city": {
 			"max": 20,
 			"amount": 12
-		],
-		"metropolis": [
+		},
+		"metropolis": {
 			"max": 20,
 			"amount": 16
-		]
+		}
 	},
 	"Businesses": {
 		"thorp": [
