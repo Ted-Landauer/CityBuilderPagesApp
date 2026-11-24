@@ -25,15 +25,11 @@ console.log("These are the Thorp businesses", globalData.Businesses.cityType);
 
 
 function selectBusinesses (cityType) {
-	console.log("City(2):", cityType)
+	console.log("City(2):", cityType);
 	
 	let businessList = globalData.cityType;
 	
-	/*
-	for (let i = 0; i < totalBusinessesNeeded) {
-		
-	}
-	*/
+	
 	
 }
 
