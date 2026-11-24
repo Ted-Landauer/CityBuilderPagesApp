@@ -25,9 +25,12 @@ Promise.all([
 
 function runPrints () {
 	console.log("JSON Access Tests all data", globalData);
-	console.log("JSON Access Tests array index", globalData[0]);
+	
 	console.log("JSON Access Tests array value", globalData["Businesses"]);
-	console.log("JSON Access Tests dot access", globalData.Businesses);
+	console.log("JSON Access Tests dot access", globalData.Businesses.thorp);
+	
+	console.log("JSON Access Tests array value to thorp", globalData["Businesses"]["thorp"]);
+	console.log("JSON Access Tests dot access to thorp", globalData.Businesses.thorp);
 	
 }
 
