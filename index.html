@@ -12,7 +12,8 @@
 			<h1 id="mainTitle">City Builder</h1>
 			<label>This page will generate a list of businesses that could exist in a fantasy style town. The lists of businesses are divided by the size of the town.</label>
 			
-			<button id="testDataGather" onclick=runPrints()>console print</button>
+			<button hidden id="testDataGather" onclick=runPrints()>console print</button>
+			<button id="testGenerateBusinesses" onclick=selectBusinesses()>Generate Businesses</button>
 		</header>
 		
 		<main>
@@ -23,25 +24,25 @@
 					<input type="radio" id="thorp" name="citySizes" value="thorp" checked onchange=setCitySize(this.value) />
 					<label for="thorp">Thorp</label>
 					
-					<input type="radio" id="hamlet" name="citySizes" value="hamlet" checked onchange=setCitySize(this.value) />
+					<input type="radio" id="hamlet" name="citySizes" value="hamlet" onchange=setCitySize(this.value) />
 					<label for="hamlet">Hamlet</label>
 					
-					<input type="radio" id="village" name="citySizes" value="village" checked onchange=setCitySize(this.value) />
+					<input type="radio" id="village" name="citySizes" value="village" onchange=setCitySize(this.value) />
 					<label for="village">Village</label>
 					
-					<input type="radio" id="small town" name="citySizes" value="small town" checked onchange=setCitySize(this.value) />
+					<input type="radio" id="small town" name="citySizes" value="small town" onchange=setCitySize(this.value) />
 					<label for="small town">Small Town</label>
 					
-					<input type="radio" id="large town" name="citySizes" value="large town" checked onchange=setCitySize(this.value) />
+					<input type="radio" id="large town" name="citySizes" value="large town" onchange=setCitySize(this.value) />
 					<label for="large town">Large Town</label>
 					
-					<input type="radio" id="small city" name="citySizes" value="small city" checked onchange=setCitySize(this.value) />
+					<input type="radio" id="small city" name="citySizes" value="small city" onchange=setCitySize(this.value) />
 					<label for="small city">Small City</label>
 					
-					<input type="radio" id="large city" name="citySizes" value="large city" checked onchange=setCitySize(this.value) />
+					<input type="radio" id="large city" name="citySizes" value="large city" onchange=setCitySize(this.value) />
 					<label for="large city">Large City</label>
 					
-					<input type="radio" id="metropolis" name="citySizes" value="metropolis" checked onchange=setCitySize(this.value) />
+					<input type="radio" id="metropolis" name="citySizes" value="metropolis" onchange=setCitySize(this.value) />
 					<label for="metropolis">Metropolis</label>
 					
 				</div>

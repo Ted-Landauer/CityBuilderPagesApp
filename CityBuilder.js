@@ -23,6 +23,7 @@ Promise.all([
 //console.log("These are the available businesses", globalData{"Businesses"});
 
 
+/*
 function runPrints () {
 	console.log("JSON Access Tests all data", globalData);
 	
@@ -32,7 +33,7 @@ function runPrints () {
 	console.log("JSON Access Tests array value to thorp", globalData["Businesses"]["thorp"]);
 	console.log("JSON Access Tests dot access to thorp", globalData.Businesses.thorp);
 	
-}
+}*/
 
 
 
@@ -44,7 +45,11 @@ function runPrints () {
 function selectBusinesses (cityType) {
 	console.log("City(2):", cityType);
 	
-	let businessList = globalData.cityType;
+	let businessList = globalData.Businesses.cityType;
+	
+	console.log("List of Businesses:", businessList);
+	
+	
 	
 	
 	
@@ -61,13 +66,14 @@ function populateBusinessList () {
 function setCitySize (cityValue) {
 	
 	cityType = cityValue;
+	console.log("City Size Value:", cityType);
 	
 }
 
 function setNumberOfBusinesses (cityType) {
 	console.log("City(1):", cityType);
 	
-	cityRoll = globalData.DieRolls.cityType.amount
+	cityRoll = globalData.DieRolls.cityType.amount;
 	
 	totalBusinessesNeeded = Math.floor(Math.random() * cityRoll);
 }
