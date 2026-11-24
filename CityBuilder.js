@@ -6,7 +6,7 @@ let cityList = "";
 let businesses = "";
 let totalBusinessesNeeded = 0;
 
-let cityType = "thorp";
+let cityType = "";
 let cityRoll = 0;
 
 let globalData = {};
@@ -42,7 +42,7 @@ function runPrints () {
 
 
 
-function selectBusinesses (cityType) {
+function selectBusinesses () {
 	console.log("City(2):", cityType);
 	
 	let businessList = globalData.Businesses[cityType];
