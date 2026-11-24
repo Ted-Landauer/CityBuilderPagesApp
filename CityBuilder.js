@@ -47,6 +47,11 @@ function selectBusinesses (cityType) {
 	
 	let businessList = globalData.Businesses.cityType;
 	
+	console.log("List 1:", globalData);
+	console.log("List 2:", globalData.Businesses);
+	console.log("List 3:", globalData.Businesses.thorp);
+	
+	
 	console.log("List of Businesses:", businessList);
 	
 	
