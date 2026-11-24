@@ -1,16 +1,50 @@
 {
 	"TownSizes": {
-		"Thorp": "20 - 80",
-		"Hamlet": "81 - 400",
-		"Village": "401 - 900",
-		"Small Town": "901 - 2000",
-		"Large Town": "2001 - 5000",
-		"Small City": "5001 - 12000",
-		"Large City": "12001 - 25000",
-		"Metropolis": "25001+"
+		"thorp": "20 - 80",
+		"hamlet": "81 - 400",
+		"village": "401 - 900",
+		"small town": "901 - 2000",
+		"large town": "2001 - 5000",
+		"small city": "5001 - 12000",
+		"large city": "12001 - 25000",
+		"metropolis": "25001+"
+	},
+	"DieRolls": {
+		"thorp": [
+			"max": 6,
+			"amount": 5
+		],
+		"hamlet": [
+			"max": 12,
+			"amount": 8
+		],
+		"village": [
+			"max": 20,
+			"amount": 12
+		],
+		"small town": [
+			"max": 20,
+			"amount": 12
+		],
+		"large town": [
+			"max": 20,
+			"amount": 12
+		],
+		"small city": [
+			"max": 20,
+			"amount": 12
+		],
+		"large city": [
+			"max": 20,
+			"amount": 12
+		],
+		"metropolis": [
+			"max": 20,
+			"amount": 16
+		]
 	},
 	"Businesses": {
-		"Thorp": [
+		"thorp": [
 			"Leatherers",
 			"Farms",
 			"General Supply Shops",
@@ -18,7 +52,7 @@
 			"Butchers",
 			"Falconer"
 		],
-		"Hamlet": [
+		"hamlet": [
 			"Taverns/Inn",
 			"Cemeteries",
 			"Tailors",
@@ -26,7 +60,7 @@
 			"Local Mage",
 			"Wildsman"
 		],
-		"Village": [
+		"village": [
 			"Breweries",
 			"Bakeries",
 			"Weapon Shops",
@@ -36,7 +70,7 @@
 			"Guard Posts",
 			"Square/Market/City Center"
 		],
-		"Small Town": [
+		"small town": [
 			"Stables",
 			"Parks",
 			"Churches/Temples",
@@ -44,7 +78,7 @@
 			"Trinket Shops",
 			"Map/Caligraphy/Paper Shops"
 		],
-		"Large Town": [
+		"large town": [
 			"Docks/Shipping Yards",
 			"Bookstores",
 			"Banks",
@@ -52,7 +86,7 @@
 			"Sewers",
 			"Guildhalls"
 		],
-		"Small City": [
+		"small city": [
 			"Thieves Guilds",
 			"Museums",
 			"Secondary Schools/Universities/etc.",
@@ -62,7 +96,7 @@
 			"Lumber Yards/Mills",
 			"Pawn Shops/Jewlers"
 		],
-		"Large City": [
+		"large city": [
 			"Arena",
 			"Magic Item Shops",
 			"Ship Yard",
@@ -70,7 +104,7 @@
 			"Mail Carriers/Delivery/Newspaper Services",
 			"Archmage/Head Magic User"
 		],
-		"Metropolis": []
+		"metropolis": []
 	}
 }
 
