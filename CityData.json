@@ -1,0 +1,77 @@
+{
+	"TownSizes": {
+		"Thorp": "20 - 80",
+		"Hamlet": "81 - 400",
+		"Village": "401 - 900",
+		"Small Town": "901 - 2000",
+		"Large Town": "2001 - 5000",
+		"Small City": "5001 - 12000",
+		"Large City": "12001 - 25000",
+		"Metropolis": "25001+"
+	},
+	"Businesses": {
+		"Thorp": [
+			"Leatherers",
+			"Farms",
+			"General Supply Shops",
+			"Smithies",
+			"Butchers",
+			"Falconer"
+		],
+		"Hamlet": [
+			"Taverns/Inn",
+			"Cemeteries",
+			"Tailors",
+			"Apothicaries",
+			"Local Mage",
+			"Wildsman"
+		],
+		"Village": [
+			"Breweries",
+			"Bakeries",
+			"Weapon Shops",
+			"Armories",
+			"Repair Shops",
+			"Healers/Hospitals",
+			"Guard Posts",
+			"Square/Market/City Center"
+		],
+		"Small Town": [
+			"Stables",
+			"Parks",
+			"Churches/Temples",
+			"Libraries",
+			"Trinket Shops",
+			"Map/Caligraphy/Paper Shops"
+		],
+		"Large Town": [
+			"Docks/Shipping Yards",
+			"Bookstores",
+			"Banks",
+			"Restaurants",
+			"Sewers",
+			"Guildhalls"
+		],
+		"Small City": [
+			"Thieves Guilds",
+			"Museums",
+			"Secondary Schools/Universities/etc.",
+			"Theater",
+			"Taxi Services/Public Transportation",
+			"Orphanages/Aslyums",
+			"Lumber Yards/Mills",
+			"Pawn Shops/Jewlers"
+		],
+		"Large City": [
+			"Arena",
+			"Magic Item Shops",
+			"Ship Yard",
+			"Golemery (Makes constructs for use in the city)",
+			"Mail Carriers/Delivery/Newspaper Services",
+			"Archmage/Head Magic User"
+		],
+		"Metropolis": []
+	}
+}
+
+
