@@ -9,40 +9,48 @@
 		"large city": "12001 - 25000",
 		"metropolis": "25001+"
 	},
-	"DieRolls": {
-		"thorp": {
+	"DieRolls": [
+		{
+			"city": "thorp",
 			"max": 6,
-			"amount": 5
+			"amount": 5,
 		},
-		"hamlet": {
+		{
+			"city": "hamlet",
 			"max": 12,
-			"amount": 8
+			"amount": 8,
 		},
-		"village": {
+		{
+			"city": "village",
 			"max": 20,
-			"amount": 12
+			"amount": 12,
 		},
-		"small town": {
+		{
+			"city": "small town",
 			"max": 20,
-			"amount": 12
+			"amount": 12,
 		},
-		"large town": {
+		{
+			"city": "large town",
 			"max": 20,
-			"amount": 12
+			"amount": 12,
 		},
-		"small city": {
+		{
+			"city": "small city",
 			"max": 20,
-			"amount": 12
+			"amount": 12,
 		},
-		"large city": {
+		{
+			"city": "large city",
 			"max": 20,
-			"amount": 12
+			"amount": 12,
 		},
-		"metropolis": {
+		{
+			"city": "metropolis",
 			"max": 20,
-			"amount": 16
-		}
-	},
+			"amount": 16,
+		},
+	],
 	"Businesses": {
 		"thorp": [
 			"Leatherers",
