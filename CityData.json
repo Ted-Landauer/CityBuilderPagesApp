@@ -49,7 +49,7 @@
 			"city": "metropolis",
 			"max": 20,
 			"amount": 16
-		},
+		}
 	],
 	"Businesses": {
 		"thorp": [
