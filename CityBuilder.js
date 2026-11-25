@@ -6,11 +6,13 @@ let cityList = "";
 let businessesFinal = "";
 let totalBusinessesNeeded = 0;
 
-let cityType = "";
+let cityType = "thorp";
 let cityRoll = 0;
 let cityMax = 0;
+let cityExtra = 0;
 let cityIndex = 0;
 
+//JSON data loading code
 let globalData = {};
 
 Promise.all([
@@ -43,17 +45,17 @@ function runPrints () {
 
 
 
-//build the list of businesses
+//select from the list of businesses
 function selectBusinesses () {
+	
+	//test print statements
 	console.log("City(2):", cityType);
 	
-	let OLDDELETELATER = globalData.Businesses[cityType];
-	
+	//let OLDDELETELATER = globalData.Businesses[cityType];
 	
 	//console.log("List 1:", globalData);
 	//console.log("List 2:", globalData.Businesses);
 	//console.log("List 3:", globalData.Businesses.thorp);
-	
 	
 	//console.log("List of Businesses:", businessList);
 	
@@ -64,7 +66,28 @@ function selectBusinesses () {
 	}
 	*/
 	
-	populateBusinessList();
+	let randomBusinessIndex = 0;
+	let randomBusiness = "";
+	
+	let availableBusinesses = populateBusinessList();
+	
+	//NOTES TO DELETE LATER
+		//city roll is the base amount to roll on the table
+	
+		//city max is the size of the table at that city size
+	
+		//city extra are the extra rolls needed
+	
+	for (let i = 0; i < (cityRoll + cityExtra); i++) {
+		randomBusinessIndex = Math.floor(Math.random() * cityMax);
+		
+		businessesFinal.push(availableBusinesses[randomBusinessIndex]);
+	}
+	
+	
+	console.log("final list of businesses:", businessesFinal);
+	
+	
 	
 	
 	
@@ -78,39 +101,53 @@ function populateBusinessList () {
 	
 	//get the main business list
 	let businessList = globalData.Businesses[cityType];
+	
+	//test print statements
 	console.log("business list initial:", businessList);
 	
+	//get the index value of the city type we're working with
 	let activeIndex = getCityIndex(cityType);
+	
+	//test print statements
 	console.log("active index:", activeIndex);
 
+	//loop over all the cities smaller than the one we're working with
 	for (let k = 0; k < activeIndex; k++) {
 		
+		//store a city's name for an iteration
 		tempCityValue = globalData.DieRolls[k].city;
+		
+		//test print statements
 		console.log("temp city value:", tempCityValue);
 		
+		//loop over every business in the json data for the specific city size and add each one to the full business list
 		globalData.Businesses[tempCityValue].forEach((business) => {
 			businessList.push(business);
 		});
 		
 	}
 	
+	//test print statements
 	console.log("business list:", businessList);
+	
+	return businessList;
 	
 }
 
-
-
-//gets the array index of the city we're working with
+//gets the array index of the city we're working with for use later
 function getCityIndex (selectedCity) {
 	
+	//test print statements
 	console.log("city index before:", cityIndex);
-	
 	console.log("selected city:", selectedCity);
 	
+	//loop over the list of possible city types to find the one we need
 	for (let j = 0; j < 8; j++) {
+		//if we're looking at a thorp, then the index should always be zero, no need to loop past that
 		if (selectedCity === "thorp") {
 			console.log("thorp break");
 			break;
+		//if we're not looking at a thorp, then we want one of the other seven types
 		} else if (globalData.DieRolls[j].city === selectedCity) {			
 			cityIndex = j;
 			console.log("everything else break");
@@ -119,6 +156,7 @@ function getCityIndex (selectedCity) {
 		}
 	}
 	
+	//test print statements
 	console.log("city index after:", cityIndex);
 	
 	return cityIndex
@@ -129,6 +167,8 @@ function setCitySize (cityValue) {
 	
 	cityType = cityValue;
 	console.log("City Size Value:", cityType);
+	
+	setNumberOfBusinesses(cityType);
 	
 }
 
@@ -142,5 +182,7 @@ function setNumberOfBusinesses (cityType) {
 	//get the max number of entries to return
 	cityMax = globalData.DieRolls.cityType.max;
 	
+	//get the additional number of rolls to be accounted for
+	cityExtra = globalData.DieRolls.cityType.additional;
 	
 }

@@ -13,42 +13,50 @@
 		{
 			"city": "thorp",
 			"max": 6,
-			"amount": 5
+			"amount": 5,
+			"additional": 0
 		},
 		{
 			"city": "hamlet",
 			"max": 12,
-			"amount": 8
+			"amount": 8,
+			"additional": 0
 		},
 		{
 			"city": "village",
 			"max": 20,
-			"amount": 12
+			"amount": 12,
+			"additional": 0
 		},
 		{
 			"city": "small town",
-			"max": 20,
-			"amount": 12
+			"max": 26,
+			"amount": 12,
+			"additional": 3
 		},
 		{
 			"city": "large town",
-			"max": 20,
-			"amount": 12
+			"max": 32,
+			"amount": 12,
+			"additional": 6
 		},
 		{
 			"city": "small city",
-			"max": 20,
-			"amount": 12
+			"max": 40,
+			"amount": 12,
+			"additional": 10
 		},
 		{
 			"city": "large city",
-			"max": 20,
-			"amount": 12
+			"max": 46,
+			"amount": 12,
+			"additional": 13
 		},
 		{
 			"city": "metropolis",
-			"max": 20,
-			"amount": 16
+			"max": 46,
+			"amount": 16,
+			"additional": 13
 		}
 	],
 	"Businesses": {
