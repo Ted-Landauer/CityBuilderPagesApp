@@ -85,7 +85,7 @@ function populateBusinessList () {
 
 	for (let k = 0; k < activeIndex; k++) {
 		
-		tempCityValue = globalData.DieRoll[k].city;
+		tempCityValue = globalData.DieRolls[k].city;
 		console.log("temp city value:", tempCityValue);
 		
 		globalData.Businesses[tempCityValue].forEach((business) => {
