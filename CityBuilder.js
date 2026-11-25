@@ -3,7 +3,7 @@ console.log("Hello, world!");
 
 
 let cityList = "";
-let businessesFinal = "";
+let businessesFinal = [];
 let totalBusinessesNeeded = 0;
 
 let cityType = "thorp";
