@@ -178,12 +178,12 @@ function setNumberOfBusinesses (cityIndex) {
 	console.log("City(1):", cityType);
 	
 	//get the amount of entries to randomly select
-	cityRoll = globalData.DieRolls.cityIndex.amount;
+	cityRoll = globalData.DieRolls[cityIndex].amount;
 	
 	//get the max number of entries to return
-	cityMax = globalData.DieRolls.cityIndex.max;
+	cityMax = globalData.DieRolls[cityIndex].max;
 	
 	//get the additional number of rolls to be accounted for
-	cityExtra = globalData.DieRolls.cityIndex.additional;
+	cityExtra = globalData.DieRolls[cityIndex].additional;
 	
 }
