@@ -88,9 +88,9 @@ function populateBusinessList () {
 		tempCityValue = globalData.DieRoll[k].city;
 		console.log("temp city value:", tempCityValue);
 		
-		globalData.Businesses[tempCityValue].forEach(business) => {
+		globalData.Businesses[tempCityValue].forEach((business) => {
 			businessList.push(business);
-		}
+		});
 		
 	}
 	
