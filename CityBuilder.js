@@ -55,7 +55,7 @@ function selectBusinesses () {
 	//console.log("List 3:", globalData.Businesses.thorp);
 	
 	
-	console.log("List of Businesses:", businessList);
+	//console.log("List of Businesses:", businessList);
 	
 	/*
 	for (let i = 0; i < cityRoll; i++) {
