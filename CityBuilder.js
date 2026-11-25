@@ -51,32 +51,20 @@ function selectBusinesses () {
 	//test print statements
 	console.log("City(2):", cityType);
 	
-	//let OLDDELETELATER = globalData.Businesses[cityType];
-	
-	//console.log("List 1:", globalData);
-	//console.log("List 2:", globalData.Businesses);
-	//console.log("List 3:", globalData.Businesses.thorp);
-	
-	//console.log("List of Businesses:", businessList);
-	
-	/*
-	for (let i = 0; i < cityRoll; i++) {
-		randomBusiness = Math.floor(Math.random() * cityMax);
-		
-	}
-	*/
-	
 	let randomBusinessIndex = 0;
 	let randomBusiness = "";
 	
-	let availableBusinesses = populateBusinessList();
+	let availableBusinesses = [];
 	
-	//NOTES TO DELETE LATER
-		//city roll is the base amount to roll on the table
+	if (businessesFinal.length > 0) {
+		businessesFinal = [];
+	}
 	
-		//city max is the size of the table at that city size
+	if (availableBusinesses.length > 0) {
+		availableBusinesses = [];
+	}
 	
-		//city extra are the extra rolls needed
+	availableBusinesses = populateBusinessList();
 	
 	for (let i = 0; i < (cityRoll + cityExtra); i++) {
 		randomBusinessIndex = Math.floor(Math.random() * cityMax);
