@@ -110,6 +110,8 @@ function populateBusinessList () {
 	
 	//test print statements
 	console.log("active index:", activeIndex);
+	
+	setNumberOfBusinesses(cityIndex);
 
 	//loop over all the cities smaller than the one we're working with
 	for (let k = 0; k < activeIndex; k++) {
@@ -167,8 +169,6 @@ function setCitySize (cityValue) {
 	
 	cityType = cityValue;
 	console.log("City Size Value:", cityType);
-	
-	setNumberOfBusinesses(cityType);
 	
 }
 
