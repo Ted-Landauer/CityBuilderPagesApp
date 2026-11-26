@@ -1,0 +1,174 @@
+body {
+  background-color: #03339C;
+  color: #DFE2E8;
+  font-family: "Luminari", "Georgia", serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.radio-group {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  gap: 0.5rem;           /* Adds consistent space between rows */
+  border: none;           /* Optional: removes default fieldset border */
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;    /* Vertically centers the circle with the text */
+  gap: 0.5rem;            /* Adds space between the circle and text */
+  cursor: pointer;
+}
+
+
+.result {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.output {
+  rows: 2;
+  cols: 100;
+
+}
+
+
+
+
+
+
+
+
+
+
+.spellLists {
+	display: flex;
+	gap: 20px;
+	padding-top: 10px;
+}
+
+#inputFields, #randSelection {
+	flex: 1;
+}
+
+.spellDisplay {
+	display: flex;
+	gap: 40px;
+}
+
+#fullList, #generatedList {
+	flex: 1;
+	
+}
+
+.classList {
+	display: flex;
+	gap: 10px;
+}
+
+#classLabel, #selectList {
+	flex: 2;
+}
+
+.spellLimit {
+	display: flex;
+	gap: 10px;
+}
+
+#spellLabel, #spellLevelLimit {
+	flex: 1;
+}
+
+.totalSlots {
+	display: flex;
+	gap: 10px;
+}
+
+#slotsLabel, #slots {
+	flex: 1;
+}
+
+#selectList {
+	width: 200px;
+}
+
+.instructionsText {
+	
+	border-style: dotted;
+	
+	padding-left: 20px;
+	
+	padding-bottom: 10px;
+	margin-top: 0px;
+	
+}
+
+#mainTitle {
+	margin-bottom: -10px;
+	
+}
+
+#title {
+	
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #bf8040;
+}
+
+#one {
+	
+}
+
+#two {
+	
+}
+
+#threeA, #fourA, #fourB {
+	text-indent: 20px;
+}
+
+p {
+	line-height: 3px;
+}
+
+fieldset {
+	width: 350px;
+	height: 50px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #DFE2E8;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.2em;
+}

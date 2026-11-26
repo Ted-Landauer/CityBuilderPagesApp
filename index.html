@@ -10,44 +10,89 @@
 	<div class="input">
 		<header>
 			<h1 id="mainTitle">City Builder</h1>
-			<label>This page will generate a list of businesses that could exist in a fantasy style town. The lists of businesses are divided by the size of the town.</label>
-			
+			<label>This tool is designed to help world building in a fantasy setting. It generates a list of businesses that can be found in cities of various sizes. All you need to do is select the size of the city you want and click the Generate button.</label>
+            
+            <br><br>
+            
+            <label>If you'd like to do this by hand though, you can expand the DROPDOWN_NAME to see the roll tables and instructions for the manual process.</label>
+            
+            <br><br>
+            
+            <details>
+<summary>Manual</summary>
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
+
+</details>
+			<div class="btn-group">
 			<button hidden id="testDataGather" onclick=runPrints()>console print</button>
-			<button id="testGenerateBusinesses" onclick=selectBusinesses()>Generate Businesses</button>
+            <button hidden id="testDataGather1" onclick=runPrints()>console print1</button>
+            <button hidden id="testDataGather2" onclick=runPrints()>console print2</button>
+            </div>
+            
 		</header>
-		
+		<br>
 		<main>
 			<section class="citySizes">
 				<div id="cities">
-					<legend>What size of city do you want to generate businesses for?</legend>
-					
-					<input type="radio" id="thorp" name="citySizes" value="thorp" checked onchange=setCitySize(this.value) />
-					<label for="thorp">Thorp</label>
-					
-					<input type="radio" id="hamlet" name="citySizes" value="hamlet" onchange=setCitySize(this.value) />
-					<label for="hamlet">Hamlet</label>
-					
-					<input type="radio" id="village" name="citySizes" value="village" onchange=setCitySize(this.value) />
-					<label for="village">Village</label>
-					
-					<input type="radio" id="small town" name="citySizes" value="small town" onchange=setCitySize(this.value) />
-					<label for="small town">Small Town</label>
-					
-					<input type="radio" id="large town" name="citySizes" value="large town" onchange=setCitySize(this.value) />
-					<label for="large town">Large Town</label>
-					
-					<input type="radio" id="small city" name="citySizes" value="small city" onchange=setCitySize(this.value) />
-					<label for="small city">Small City</label>
-					
-					<input type="radio" id="large city" name="citySizes" value="large city" onchange=setCitySize(this.value) />
-					<label for="large city">Large City</label>
-					
-					<input type="radio" id="metropolis" name="citySizes" value="metropolis" onchange=setCitySize(this.value) />
-					<label for="metropolis">Metropolis</label>
-					
+                	<fieldset class=radio-group>
+                      <legend>What size of city do you want to generate businesses for?</legend>
+
+                      <label for="thorp">
+                          <input type="radio" id="thorp" name="citySizes" value="thorp" checked onchange=setCitySize(this.value) />
+                          Thorp: population 20 to 80
+                      </label>
+
+                      <label for="hamlet">
+                          <input type="radio" id="hamlet" name="citySizes" value="hamlet" onchange=setCitySize(this.value) />
+                          Hamlet: population 81 to 400
+                      </label>
+
+                      <label for="village">
+                          <input type="radio" id="village" name="citySizes" value="village" onchange=setCitySize(this.value) />
+                          Village: population 401 to 900
+                      </label>
+
+                      <label for="small town">
+                          <input type="radio" id="small town" name="citySizes" value="small town" onchange=setCitySize(this.value) />
+
+                          Small Town: population 901 to 2000
+                      </label>
+
+                      <label for="large town">
+                          <input type="radio" id="large town" name="citySizes" value="large town" onchange=setCitySize(this.value) />
+                          Large Town: population 2001 to 5000
+                      </label>
+
+                      <label for="small city">
+                          <input type="radio" id="small city" name="citySizes" value="small city" onchange=setCitySize(this.value) />
+                          Small City: population 5001 to 12000
+                      </label>
+
+                      <label for="large city">
+                          <input type="radio" id="large city" name="citySizes" value="large city" onchange=setCitySize(this.value) />
+                          Large City: population 12001 to 25000
+                      </label>
+
+                      <label for="metropolis">
+                          <input type="radio" id="metropolis" name="citySizes" value="metropolis" onchange=setCitySize(this.value) />
+                          Metropolis: population 25000+
+                      </label>
+                      
+                      
+                      <button id="testGenerateBusinesses" onclick=selectBusinesses()>Generate Businesses</button>
+					</fieldset>
 				</div>
+                
+                
 				
 			</section>
+            
+            
+            <section class="result">
+              <textarea id="output">test info
+              </textarea>
+            </section>
 		</main>
 		
 		

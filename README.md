@@ -12,4 +12,4 @@ to-do:
 - add in a "clear list" function when clicking to generate businesses
 - add more html to make the whole thing display properly
 - look into the issue around thorp being default but its value not being used until interacted with
-- 
+- look into and fix the issue with generating a thorp not doing the right amount of businesses
