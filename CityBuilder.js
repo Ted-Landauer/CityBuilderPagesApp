@@ -90,7 +90,9 @@ function populateManualTables () {
 	const table = document.getElementById("thorpTable");
 	table.innerHTML = "";
 	
-	globalData.Businesses.forEach((business, index) => {
+	
+	for (const [key, value] of Object.entries(globalData.Businesses)) {
+		//globalData.Businesses.forEach((business, index) => {
 		
 		console.log("what json object are we looking at?", business);
 		console.log("associated index:", index);
@@ -103,8 +105,8 @@ function populateManualTables () {
 			`;
 		table.appendChild(row);
 		*/
-		
-	});
+	}
+	//});
 	
 	
 	
