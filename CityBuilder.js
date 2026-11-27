@@ -21,8 +21,11 @@ Promise.all([
 .then(([CityData]) => {
 	globalData = CityData;
 	console.log("All data loaded!", globalData);
+	populateManualTables();
 })
 .catch(error => console.error(`error loading JSON: ${error}`));
+
+
 
 //console.log("These are the available businesses", globalData{"Businesses"});
 
@@ -77,6 +80,25 @@ function selectBusinesses () {
 	
 	
 	
+	
+	
+	
+}
+
+function populateManualTables () {
+	
+	const table = document.getElementById("thorpTable");
+	table.innerHTML = "";
+	
+	globalData.Businesses.thorp.forEach((business, index) => {
+		const row = document.createElement("tr");
+		row.innerHTML = `
+			<td>${index + 1}</td>
+			<td>${business}</td>
+			`;
+		table.appendChild(row);
+		
+	});
 	
 	
 	

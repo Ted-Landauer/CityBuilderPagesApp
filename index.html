@@ -8,8 +8,9 @@
 </head>
 <body>
 	<div class="input">
+<section class="instructions">
 		<header>
-			<h1 id="mainTitle">City Builder</h1>
+			<h1 class="mainTitle">City Builder</h1>
 			<label>This tool is designed to help world building in a fantasy setting. It generates a list of businesses that can be found in cities of various sizes. All you need to do is select the size of the city you want and click the Generate button.</label>
             
             <br><br>
@@ -19,11 +20,16 @@
             <br><br>
             
             <details>
-<summary>Manual</summary>
-<h1>My First CSS Example</h1>
-<p>This is a paragraph.</p>
+				<summary>Manual</summary>
+					<h1>My First CSS Example</h1>
+					<p>This is a paragraph.</p>
+					
+					<table>
+					
+					</table>
 
-</details>
+			</details>
+			
 			<div class="btn-group">
 			<button hidden id="testDataGather" onclick=runPrints()>console print</button>
             <button hidden id="testDataGather1" onclick=runPrints()>console print1</button>
@@ -31,10 +37,14 @@
             </div>
             
 		</header>
+        </section>
+        
 		<br>
+        
 		<main>
+        <section class="generator">
 			<section class="citySizes">
-				<div id="cities">
+				<div class="cities">
                 	<fieldset class=radio-group>
                       <legend>What size of city do you want to generate businesses for?</legend>
 
@@ -90,8 +100,8 @@
             
             
             <section class="result">
-              <textarea id="output">test info
-              </textarea>
+              <output class="testResult">test 3 this is to see just how much it might be able to handle and how things might resize 1. test 3 this is to see just how much it might be able to handle and how things might resize 2. test 3 this is to see just how much it might be able to handle and how things might resize 3. test 3 this is to see just how much it might be able to handle and how things might resize 4. test 3 this is to see just how much it might be able to handle and how things might resize 5. </output>
+            </section>
             </section>
 		</main>
 		

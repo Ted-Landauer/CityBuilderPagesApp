@@ -8,15 +8,62 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
+.instructions {
+  display: flex;
+}
+
+.generator {
+  display: flex;
+  flex-wrap: balance;
+  padding: 10px;
+  
+}
+
+.generator .citySizes {
+  display: flex;
+  
+}
 
 .radio-group {
   display: flex;
   flex-direction: column; /* Stacks items vertically */
   gap: 0.5rem;           /* Adds consistent space between rows */
-  border: none;           /* Optional: removes default fieldset border */
+  border: none;           /* Optional: removes default fieldset
+ border */
 }
+
+
+.generator .result {
+  display: flex;
+  height: 300px;
+  align-self: stretch;
+  
+}
+
+.generator .testResult {
+  display: inline-block;
+  min-width: 250px;
+  min-height: 20rem;
+  overflow: scroll;
+  border-style: solid;
+  border-radius: 10px;
+  background: blue;
+  resize: both;
+  
+
+
+}
+
+
+
+
+
+
+
 
 .radio-option {
   display: flex;
@@ -24,25 +71,6 @@ body {
   gap: 0.5rem;            /* Adds space between the circle and text */
   cursor: pointer;
 }
-
-
-.result {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.output {
-  rows: 2;
-  cols: 100;
-
-}
-
-
-
-
-
-
-
 
 
 
