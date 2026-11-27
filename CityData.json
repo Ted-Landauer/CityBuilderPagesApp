@@ -86,7 +86,7 @@
 			"Guard Posts",
 			"Square/Market/City Center"
 		],
-		"small town": [
+		"smtown": [
 			"Stables",
 			"Parks",
 			"Churches/Temples",
@@ -94,7 +94,7 @@
 			"Trinket Shops",
 			"Map/Caligraphy/Paper Shops"
 		],
-		"large town": [
+		"lrgtown": [
 			"Docks/Shipping Yards",
 			"Bookstores",
 			"Banks",
@@ -102,7 +102,7 @@
 			"Sewers",
 			"Guildhalls"
 		],
-		"small city": [
+		"smcity": [
 			"Thieves Guilds",
 			"Museums",
 			"Secondary Schools/Universities/etc.",
@@ -112,7 +112,7 @@
 			"Lumber Yards/Mills",
 			"Pawn Shops/Jewlers"
 		],
-		"large city": [
+		"lrgcity": [
 			"Arena",
 			"Magic Item Shops",
 			"Ship Yard",

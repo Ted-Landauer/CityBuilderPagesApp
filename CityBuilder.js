@@ -87,8 +87,7 @@ function selectBusinesses () {
 
 function populateManualTables () {
 	
-	const table = document.getElementById("thorpTable");
-	table.innerHTML = "";
+	
 	
 	
 	for (const [key, value] of Object.entries(globalData.Businesses)) {
@@ -97,16 +96,22 @@ function populateManualTables () {
 		console.log("what json object are we looking at?", value);
 		console.log("associated index:", key);
 		
-		/*
-		const row = document.createElement("tr");
-		row.innerHTML = `
-			<td>${index + 1}</td>
-			<td>${business}</td>
-			`;
-		table.appendChild(row);
-		*/
+		let tableID = key + "Table";
+		
+		const table = document.getElementById(tableID);
+		table.innerHTML = "";
+		
+		globalData.Businesses[key].forEach((business, index) => {
+			const row = document.createElement("tr");
+			row.innerHTML = `
+				<td>${index + 1}</td>
+				<td>${business}</td>
+				`;
+			table.appendChild(row);
+		});
+		
 	}
-	//});
+	
 	
 	
 	
