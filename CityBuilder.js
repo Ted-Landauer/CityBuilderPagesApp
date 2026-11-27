@@ -90,13 +90,19 @@ function populateManualTables () {
 	const table = document.getElementById("thorpTable");
 	table.innerHTML = "";
 	
-	globalData.Businesses.thorp.forEach((business, index) => {
+	globalData.Businesses.forEach((business, index) => {
+		
+		console.log("what json object are we looking at?", business);
+		console.log("associated index:", index);
+		
+		/*
 		const row = document.createElement("tr");
 		row.innerHTML = `
 			<td>${index + 1}</td>
 			<td>${business}</td>
 			`;
 		table.appendChild(row);
+		*/
 		
 	});
 	
