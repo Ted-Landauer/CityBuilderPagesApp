@@ -94,8 +94,8 @@ function populateManualTables () {
 	for (const [key, value] of Object.entries(globalData.Businesses)) {
 		//globalData.Businesses.forEach((business, index) => {
 		
-		console.log("what json object are we looking at?", business);
-		console.log("associated index:", index);
+		console.log("what json object are we looking at?", value);
+		console.log("associated index:", key);
 		
 		/*
 		const row = document.createElement("tr");
