@@ -96,6 +96,10 @@ function populateManualTables () {
 		console.log("what json object are we looking at?", value);
 		console.log("associated index:", key);
 		
+		if (key == "metropolis") {
+			break;
+		}
+		
 		let tableID = key + "Table";
 		
 		const table = document.getElementById(tableID);

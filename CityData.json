@@ -29,25 +29,25 @@
 			"additional": 0
 		},
 		{
-			"city": "small town",
+			"city": "smtown",
 			"max": 26,
 			"amount": 12,
 			"additional": 3
 		},
 		{
-			"city": "large town",
+			"city": "lrgtown",
 			"max": 32,
 			"amount": 12,
 			"additional": 6
 		},
 		{
-			"city": "small city",
+			"city": "smcity",
 			"max": 40,
 			"amount": 12,
 			"additional": 10
 		},
 		{
-			"city": "large city",
+			"city": "lrgcity",
 			"max": 46,
 			"amount": 12,
 			"additional": 13
