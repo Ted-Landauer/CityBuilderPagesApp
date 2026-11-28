@@ -91,7 +91,8 @@ function populateManualTables () {
 	
 	
 	for (const [key, value] of Object.entries(globalData.Businesses)) {
-		//globalData.Businesses.forEach((business, index) => {
+		
+		
 		
 		console.log("what json object are we looking at?", value);
 		console.log("associated index:", key);
@@ -100,10 +101,30 @@ function populateManualTables () {
 			break;
 		}
 		
+		let maxRolls = 0;
+		let dieToRoll = 0;
+		let additionalRolls = 0;
+		
 		let tableID = key + "Table";
 		
 		const table = document.getElementById(tableID);
 		table.innerHTML = "";
+		
+		for (let l = 0; l < 8; l++) {
+			if (globalData.DieRolls[l].city == value) {
+				maxRolls = globalData.DieRolls[l].max;
+				additionalRolls = globalData.DieRolls[l].additional;
+				break;
+			}
+		}
+		
+		dieToRoll = maxRolls - (2 * additionalRolls);
+		
+		const headerRow = document.createElement("tr");
+		headerRow.innerHTML = `
+			<th>d${dieToRoll}</th>
+			<th>Businesses</th>
+		`;
 		
 		globalData.Businesses[key].forEach((business, index) => {
 			const row = document.createElement("tr");
