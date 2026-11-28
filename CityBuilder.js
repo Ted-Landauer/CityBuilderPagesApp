@@ -110,8 +110,13 @@ function populateManualTables () {
 		const table = document.getElementById(tableID);
 		table.innerHTML = "";
 		
+		console.log("before die rolls loop");
 		for (let l = 0; l < 8; l++) {
+			
+			console.log("inside die rolls loop, outside if statement");
 			if (globalData.DieRolls[l].city == value) {
+				
+				console.log("in die rolls if statement");
 				maxRolls = globalData.DieRolls[l].max;
 				additionalRolls = globalData.DieRolls[l].additional;
 				
@@ -120,6 +125,8 @@ function populateManualTables () {
 				break;
 			}
 		}
+		
+		console.log("after die rolls loop");
 		
 		dieToRoll = maxRolls - (2 * additionalRolls);
 		
