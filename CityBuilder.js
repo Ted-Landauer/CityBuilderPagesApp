@@ -114,11 +114,16 @@ function populateManualTables () {
 			if (globalData.DieRolls[l].city == value) {
 				maxRolls = globalData.DieRolls[l].max;
 				additionalRolls = globalData.DieRolls[l].additional;
+				
+				console.log("max rolls set:", maxRolls);
+				console.log("additional rolls set:", additionalRolls);
 				break;
 			}
 		}
 		
 		dieToRoll = maxRolls - (2 * additionalRolls);
+		
+		console.log("die to roll:", dieToRoll);
 		
 		const headerRow = document.createElement("tr");
 		headerRow.innerHTML = `
