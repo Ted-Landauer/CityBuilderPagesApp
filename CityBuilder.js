@@ -114,7 +114,7 @@ function populateManualTables () {
 		for (let l = 0; l < 8; l++) {
 			
 			console.log("inside die rolls loop, outside if statement");
-			if (globalData.DieRolls[l].city == value) {
+			if (globalData.DieRolls[l].city == key) {
 				
 				console.log("in die rolls if statement");
 				maxRolls = globalData.DieRolls[l].max;
