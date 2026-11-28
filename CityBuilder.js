@@ -126,6 +126,8 @@ function populateManualTables () {
 			<th>Businesses</th>
 		`;
 		
+		table.appendChild(headerRow);
+		
 		globalData.Businesses[key].forEach((business, index) => {
 			const row = document.createElement("tr");
 			row.innerHTML = `
