@@ -72,12 +72,28 @@ function selectBusinesses () {
 	for (let i = 0; i < (cityRoll + cityExtra); i++) {
 		randomBusinessIndex = Math.floor(Math.random() * cityMax);
 		
-		businessesFinal.push(availableBusinesses[randomBusinessIndex]);
+		businessesFinal.push(availableBusinesses[randomBusinessIndex] + "\n");
 	}
 	
 	
 	console.log("final list of businesses:", businessesFinal);
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	businessesFinal.forEach((business, index) => {
+		document.getElementById("businessOutput").innerHTML += business;
+		
+	});
+	*/
 	document.getElementById("businessOutput").innerHTML = businessesFinal;
 	
 	
