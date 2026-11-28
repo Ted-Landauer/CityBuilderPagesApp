@@ -78,6 +78,8 @@ function selectBusinesses () {
 	
 	console.log("final list of businesses:", businessesFinal);
 	
+	document.getElementById("businessOutput").innerHTML = businessesFinal;
+	
 	
 	
 	
